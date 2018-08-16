@@ -1,5 +1,6 @@
 stack :vpc
-stack :db, import: :vpc
-stack :redis, import: :vpc
+stack :db,      import: :vpc
+stack :redis,   import: :vpc
 stack :workers, import: %i[vpc redis db]
-stack :web, import: %i[vpc redis db]
+stack :web,     import: %i[vpc redis db]
+stack :user
