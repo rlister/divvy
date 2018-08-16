@@ -1,1 +1,2 @@
 stack :vpc
+stack :db, import: :vpc
