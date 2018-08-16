@@ -1,2 +1,3 @@
 stack :vpc
 stack :db, import: :vpc
+stack :redis, import: :vpc
